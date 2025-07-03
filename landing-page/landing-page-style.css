@@ -210,9 +210,9 @@ nav li:has(#signUpBtnLink) {
   display: flex;
   justify-content: center;
   margin: auto;
-  color: white;
+  color: violet;
   text-decoration: none;
-  font-family: "Roboto";
+  text-shadow: none;
   font-weight: bold;
   background-color: yellow;
   border: 2px solid yellow;
