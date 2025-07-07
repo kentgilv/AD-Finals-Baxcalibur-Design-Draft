@@ -1,37 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Login Page</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Log In | Baxcalibur</title>
 
-  <!-- Orbitron Google Fonts Link -->
+    <!-- Favicon Link -->
+    <link
+      rel="icon"
+      href="../landing-page/images/baxcalibur-logo.png"
+      type="image/png"
+    />
+
+    <!-- Orbitron Google Fonts Link -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    
-  <link rel="stylesheet" href="login-page-style.css" />
-</head>
-<body>
-  <div class="container">
-    <form class="login-form" onsubmit="return validateForm()">
-      <h2>Welcome Back!</h2>
-      <div class="input-group">
-        <label for="username">Username</label>
-        <input type="text" id="username" placeholder="Enter username" />
-      </div>
-      <div class="input-group">
-        <label for="password">Password</label>
-        <input type="password" id="password" placeholder="Enter password" />
-      </div>
-      <button type="submit">Login</button>
-      <p class="error-message" id="error-message"></p>
-    </form>
-  </div>
 
-  <script src="script.js"></script>
-</body>
+    <link rel="stylesheet" href="login-page-style.css" />
+  </head>
+  <body>
+    <div class="gradient">
+    <img class="logo" src="../landing-page/images/baxcalibur-logo.png" height="75px" alt="">
+    <div class="container">
+      <form class="login-form" onsubmit="return validateForm()">
+        <h2>Welcome Back!</h2>
+        <p>Please enter your login credentials to log in.</p>
+        
+        <div class="input-group">
+          <label for="username">Username</label>
+          <input type="text" id="username" placeholder="Enter username" />
+        </div>
+        <div class="input-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" placeholder="Enter password" />
+        </div> 
+        <button type="submit">Login</button>
+        <p>Already have an account?</p>
+        <a href="">Sign Up</a>
+        <p class="error-message" id="error-message"></p>
+      </form>
+    </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
 </html>
